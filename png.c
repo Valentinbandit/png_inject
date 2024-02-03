@@ -29,7 +29,7 @@ uint8_t buffer[32*1024];
 int main(int argc, char **argv){
   char* program = *argv++;
   if(*argv == NULL){
-    fprintf(stderr, "Usage: %s <input.png>\n", program);
+    fprintf(stderr, "Usage: %s <input.png> <output.png> <payload.png>\n", program);
     fprintf(stderr, "ERROR: No input file was given");
     exit(1);
   }
